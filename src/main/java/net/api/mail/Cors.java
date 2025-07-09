@@ -15,7 +15,7 @@ public class Cors {
 	public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration configuration = new CorsConfiguration();
 	    
-	    configuration.setAllowedOrigins(List.of(
+	    configuration.setAllowedOriginPatterns(List.of(
 	    		"http://localhost:4200",
 	    		"https://andreluislima.github.io" 
 	    ));
