@@ -16,7 +16,6 @@ import net.api.mail.service.EmailServiceInterface;
 
 @RestController
 @RequestMapping("/enviar-email")
-//@CrossOrigin(origins = "http://localhost:4200")
 public class EmailController {
 
 	@Autowired
