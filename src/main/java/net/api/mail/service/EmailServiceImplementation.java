@@ -17,6 +17,8 @@ public class EmailServiceImplementation implements EmailServiceInterface{
 	@Async
 	@Override
 	public void enviarEmail(MensagemDTO mensagem) {
+		System.out.println("Thread do envio: " + Thread.currentThread().getName());
+		
 		 SimpleMailMessage email = new SimpleMailMessage();
 		 
 		 email.setFrom("andrelimag89@gmail.com");

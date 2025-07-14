@@ -25,7 +25,7 @@ public class EmailController {
 	public ResponseEntity<Map<String, String>> enviarMensagem(@RequestBody MensagemDTO mensagem) {
 		emailServiceInterface.enviarEmail(mensagem);
 		Map<String, String> response = new HashMap<>();
-		response.put("mensagem", "\"Mensagem enviada!");
+		response.put("mensagem", "Mensagem enviada!");
 		return ResponseEntity.ok(response);
 	}
 
