@@ -17,7 +17,8 @@ public class CorsConfig {
 
 	        configuration.setAllowedOrigins(List.of(
 	            "http://localhost:4200",
-	            "https://andreluislima.github.io"
+	            "https://andreluislima.github.io",
+	            "https://andrelima.tech/"
 	        ));
 
 	        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
